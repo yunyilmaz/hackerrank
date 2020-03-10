@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Arrays
 {
@@ -47,7 +44,7 @@ namespace Arrays
 
             for (int i = 0; i < 6; i++)
             {
-                string input = File.ReadLines(Environment.CurrentDirectory + "\\..\\..\\input\\input00.txt").ToArray()[i];
+                string input = File.ReadLines(Environment.CurrentDirectory + "\\..\\..\\..\\input\\input00.txt").ToArray()[i];
                 arr[i] = Array.ConvertAll(input.Split(' '), arrTemp => Convert.ToInt32(arrTemp));
             }
 
